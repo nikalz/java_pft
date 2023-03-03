@@ -8,11 +8,11 @@ public class MyFirstProgram {
 //        System.out.println(k + i);
         Square s = new Square(5);
 
-        System.out.println("Ploshad kvadrata= " + area(s));
+        System.out.println("Ploshad kvadrata= " + s.area());
         
         Rectangle r = new Rectangle(6,2);
 
-        System.out.println("Ploshad pryamoyg= " + area(r));
+        System.out.println("Ploshad pryamoyg= " + r.area());
     }
 
     public static void hello (String who) {
@@ -20,10 +20,6 @@ public class MyFirstProgram {
         System.out.println("Hi " + who);
 
     }
-    public static double area (Square s){
-        return s.l * s.l;
-    }
-    public static double area (Rectangle r){
-        return r.a * r.b;
-    }
+
+
 }
